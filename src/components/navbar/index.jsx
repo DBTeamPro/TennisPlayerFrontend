@@ -1,3 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
+import "./index.css"
 
+const Navbar = (props) => {
+    return (
+        <div className="NavbarContainer">
+            Navbar
+        </div>
+    );
+}
+
+export default Navbar;
