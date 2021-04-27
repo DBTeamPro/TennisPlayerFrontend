@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import "./index.css"
 import {motion} from 'framer-motion'
 import MenuToggle from './menuToggle'
+import NavMenu from './navMenu'
 
 const HamburgerMenu = (props) => {
     const menuVariants = {
@@ -35,7 +36,9 @@ const HamburgerMenu = (props) => {
                 transition={menuTransition}
                 animate={isOpen ? "open" : "closed"}
                 variants={menuVariants}
-            />
+            >
+                <NavMenu isOpen={isOpen}></NavMenu>
+            </motion.div>
         </div>
     );
 }
