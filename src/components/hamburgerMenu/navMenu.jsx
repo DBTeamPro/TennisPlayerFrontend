@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
+import { Link } from "react-router-dom";
 import React from 'react'
 import "./navMenu.css"
 
@@ -32,7 +33,7 @@ const NavMenu = ({ isOpen }) => {
                         },
                     }}
                 >
-                    <a href="#">Player Analisis</a>
+                    <Link to="/">Match Analisis</Link>
                 </motion.li>
                 <motion.li
                     className = "NavLink"
@@ -49,7 +50,7 @@ const NavMenu = ({ isOpen }) => {
                         },
                     }}
                 >
-                    <a href="#">Add Matches</a>
+                    <Link to="/insert">Add Matches</Link>
                 </motion.li>
                 <motion.li
                     className = "NavLink"
@@ -66,7 +67,7 @@ const NavMenu = ({ isOpen }) => {
                         },
                     }}
                 >
-                    <a href="#">Search For Matches</a>
+                    <Link to="/information">Search For Matches</Link>
                 </motion.li>
                 <motion.li
                     className = "NavLink"
@@ -83,7 +84,7 @@ const NavMenu = ({ isOpen }) => {
                         },
                     }}
                 >
-                    <a href="#">Update Matches</a>
+                    <Link to="/update">Update Matches</Link>
                 </motion.li>
                 <motion.li
                     className = "NavLink"
@@ -100,7 +101,7 @@ const NavMenu = ({ isOpen }) => {
                         },
                     }}
                 >
-                    <a href="#">Delete Matches</a>
+                    <Link to="/delete">Delete Matches</Link>
                 </motion.li>
                 <motion.li
                     className = "NavLink"
@@ -117,7 +118,7 @@ const NavMenu = ({ isOpen }) => {
                         },
                     }}
                 >
-                    <a href="#">Activity</a>
+                    <Link to="/activity">Activity</Link>
                 </motion.li>
             </lu>
         </div>
