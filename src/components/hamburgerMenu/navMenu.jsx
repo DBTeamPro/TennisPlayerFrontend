@@ -33,7 +33,7 @@ const NavMenu = ({ isOpen }) => {
                         },
                     }}
                 >
-                    <Link to="/">Match Analisis</Link>
+                    <Link to="/match/first-place">Match Analisis</Link>
                 </motion.li>
                 <motion.li
                     className = "NavLink"
@@ -50,7 +50,7 @@ const NavMenu = ({ isOpen }) => {
                         },
                     }}
                 >
-                    <Link to="/insert">Add Matches</Link>
+                    <Link to="/player-analysis">Player Analysis</Link>
                 </motion.li>
                 <motion.li
                     className = "NavLink"
@@ -67,7 +67,7 @@ const NavMenu = ({ isOpen }) => {
                         },
                     }}
                 >
-                    <Link to="/information">Search For Matches</Link>
+                    <Link to="/insert">Add Matches</Link>
                 </motion.li>
                 <motion.li
                     className = "NavLink"
@@ -84,7 +84,7 @@ const NavMenu = ({ isOpen }) => {
                         },
                     }}
                 >
-                    <Link to="/update">Update Matches</Link>
+                    <Link to="/information">Search Matches</Link>
                 </motion.li>
                 <motion.li
                     className = "NavLink"
@@ -101,7 +101,7 @@ const NavMenu = ({ isOpen }) => {
                         },
                     }}
                 >
-                    <Link to="/delete">Delete Matches</Link>
+                    <Link to="/update">Update Matches</Link>
                 </motion.li>
                 <motion.li
                     className = "NavLink"
@@ -118,7 +118,7 @@ const NavMenu = ({ isOpen }) => {
                         },
                     }}
                 >
-                    <Link to="/activity">Activity</Link>
+                    <Link to="/delete">Delete Matches</Link>
                 </motion.li>
             </lu>
         </div>
