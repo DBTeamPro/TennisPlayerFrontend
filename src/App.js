@@ -1,25 +1,23 @@
 import './App.css';
-import Navbar from "./components/navbar/index";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Analysis from './pages/analysis';
-import Activity from './pages/activity';
-import Delete from './pages/delete';
-import Information from './pages/information';
-import Insert from './pages/insert';
-import Update from './pages/update';
+import Landing from './pages/landing/index'
+import FirstPlace from './pages/match-analysis/first_place'
+import Seed from './pages/match-analysis/seed'
+import Point from './pages/match-analysis/point'
+import Underdog from './pages/match-analysis/underdog'
+import RankDiff from './pages/match-analysis/rank_diff'
 
 function App() {
 return (
 	<BrowserRouter >
 		<div className="AppContainer">
 			<Switch>
-				<Route exact path="/" component={Analysis}/>
-				<Route path="/activity" component={Activity}/>
-				<Route path="/delete" component={Delete}/>
-				<Route path="/update" component={Update}/>
-				<Route path="/information" component={Information}/>
-				<Route path="/insert" component={Insert}/>
-				<Route path="/update" component={Update}/>
+				<Route exact path="/" component={Landing}/>
+				<Route path="/match/first-place" component={FirstPlace}/>
+				<Route path="/match/seed" component={Seed}/>
+				<Route path="/match/point" component={Point}/>
+				<Route path="/match/underdog" component={Underdog}/>
+				<Route path="/match/rank-diff" component={RankDiff}/>
 			</Switch>
 		</div>
 	</BrowserRouter>
