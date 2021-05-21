@@ -33,7 +33,7 @@ const NavMenu = ({ isOpen }) => {
                         },
                     }}
                 >
-                    <Link to="/match/first-place">Match Analisis</Link>
+                    <Link to="/">Match Analisis</Link>
                 </motion.li>
                 <motion.li
                     className = "NavLink"
@@ -50,7 +50,7 @@ const NavMenu = ({ isOpen }) => {
                         },
                     }}
                 >
-                    <Link to="/player-analysis">Player Analysis</Link>
+                    <Link to="/player">Player Analysis</Link>
                 </motion.li>
                 <motion.li
                     className = "NavLink"

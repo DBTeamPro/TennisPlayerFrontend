@@ -1,22 +1,22 @@
 import React from 'react'
 import Navbar from '../../components/navbar'
-import './first_place.css'
+import './index.css'
 import GraphBox from '../../components/graphbox'
-import InnerBar from '../../components/innnerbar/index'
+import SwitchBox from '../../components/switchbox/index'
 
-const FirstPlace = () => {
+const MatchAnalysis = () => {
     const cata = ['FirstPlace', 'Seed', 'Point', 'Underdog', 'RankDifference']
 
     return (
-        <div className="first-place-container">
+        <div className="match-analysis-container">
             <Navbar></Navbar>
-            <InnerBar 
+            <SwitchBox 
                 t1={cata[0]}
                 t2={cata[1]}
                 t3={cata[2]}
                 t4={cata[3]}
                 t5={cata[4]}
-            ></InnerBar>
+            ></SwitchBox>
             <div className="content">
                 <GraphBox></GraphBox>
             </div>
@@ -24,4 +24,4 @@ const FirstPlace = () => {
     );
 }
 
-export default FirstPlace;
+export default MatchAnalysis;
