@@ -12,7 +12,7 @@ const SwitchBox = (props) => {
     const [isOpen, setOpen] = useState(false)
 
     useEffect(() => {
-        setOpen(!isOpen)
+        setOpen(isOpen => !isOpen)
     }, [position])
 
     const slideVariants = {
