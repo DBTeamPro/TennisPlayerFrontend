@@ -17,9 +17,6 @@ const MatchAnalysis = () => {
                 t4={cata[3]}
                 t5={cata[4]}
             ></SwitchBox>
-            <div className="content">
-                <GraphBox></GraphBox>
-            </div>
         </div>
     );
 }
