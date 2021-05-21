@@ -1,30 +1,18 @@
-import {React, useState, useEffect} from 'react'
+import React from 'react'
 import './index.css'
-import axios from 'axios'
 
-const GraphBox = () => {
-    const [data, setData] = useState('')
-    const url = 'http://localhost:5000/'
-
-    const getData = async () => {
-        try {
-            const response = await axios.get(`${url}match/firstplace`)
-            setData(response.data)
-        }
-        catch (error){
-            console.error(`Error: ${error}`)
-        }
-    }
-
-    useEffect(() => {
-        getData()
-    }, [])
-
+const GraphBox = ({imgLink, name, content}) => {
     return (
-        <div className="graph-box-container">
-            {data.length > 0 && data.map((ele) => {
-                return <li>{Object.values(ele)[0]}</li>
-            })}
+        <div className="graph-box-outer">
+            <div className="graph-box-container">
+                <div className="image-container">
+                    <img src={imgLink} alt="#" height="100%" width="100%"/>
+                </div>
+                <div className="content">
+                    <div className="name">{name}</div>
+                    <div className="list">{content}</div>
+                </div>
+            </div>
         </div>
     );
 }
