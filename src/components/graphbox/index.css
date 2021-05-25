@@ -1,6 +1,6 @@
 .graph-box-outer {
     position: relative;
-    width: 30%;
+    width: 25%;
     height: 100%;
     margin: 0.2em;
     margin-left: 1em;
@@ -33,7 +33,7 @@
     height: 60%;
     display: flex;
     flex-direction: column;
-    margin-top: 0.5em;
+    margin-top: 0.3em;
 }
 
 .graph-box-outer .graph-box-container .content .name {
@@ -48,6 +48,6 @@
     position: relative;
     width: 100%;
     height: auto;
-    font-size: 0.3em;
+    font-size: 0.28em;
     margin-top: 0.1em;
 }
