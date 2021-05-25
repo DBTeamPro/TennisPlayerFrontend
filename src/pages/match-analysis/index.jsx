@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/navbar'
 import './index.css'
-import GraphBox from '../../components/graphbox'
 import SwitchBox from '../../components/switchbox/index'
 
 const MatchAnalysis = () => {
