@@ -14,7 +14,7 @@
     width: 100%;
     height: 8%;
     justify-content: left;
-    border-bottom: 1px solid #000;
+    border-bottom: 3px solid #000;
 }
 
 .switch-box-container .innerbar-container .title{
@@ -33,6 +33,7 @@
     font-size: 18px;
     border-radius: 8px;
     text-align: center;
+    cursor: pointer;
 }
 
 .switch-box-container .innerbar-container .title:hover .content{
