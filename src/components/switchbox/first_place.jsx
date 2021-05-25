@@ -37,20 +37,20 @@ const FirstPlace = () => {
         avgRank = data.map((ele) => ele.avg_rank)
 
         card1 = [
-            ['Average loss per round:  ', avgLossPerRound[0]], 
-            ['Average Rank:  ', avgRank[0]]
+            ['平均一場輸的局數:  ', avgLossPerRound[0]], 
+            ['平均世界排名:  ', avgRank[0]]
         ]
         card2 = [
-            ['Average loss per round:  ', avgLossPerRound[1]], 
-            ['Average Rank:  ', avgRank[1]]
+            ['平均一場輸的局數:  ', avgLossPerRound[1]], 
+            ['平均世界排名:  ', avgRank[1]]
         ]
         card3 = [
-            ['Average loss per round:  ', avgLossPerRound[2]], 
-            ['Average Rank:  ', avgRank[2]]
+            ['平均一場輸的局數:  ', avgLossPerRound[2]], 
+            ['平均世界排名:  ', avgRank[2]]
         ]
         card4 = [
-            ['Average loss per round:  ', avgLossPerRound[3]], 
-            ['Average Rank:  ', avgRank[3]]
+            ['平均一場輸的局數:  ', avgLossPerRound[3]], 
+            ['平均世界排名:  ', avgRank[3]]
         ]
     }
 
