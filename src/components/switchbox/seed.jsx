@@ -37,20 +37,20 @@ const Seed = () => {
         avgUnseedRank = data.map((ele) => ele.avg_unseed_rank)
 
         card1 = [
-            ['Unseed Defeat Seed:  ', unseedDefeatSeed[0]], 
-            ['Average Unseed Rank:  ', avgUnseedRank[0]]
+            ['非種子打敗種子的比率:  ', unseedDefeatSeed[0]], 
+            ['非種子成員平均排名:  ', avgUnseedRank[0]]
         ]
         card2 = [
-            ['Unseed Defeat Seed:  ', unseedDefeatSeed[1]], 
-            ['Average Unseed Rank:  ', avgUnseedRank[1]]
+            ['非種子打敗種子的比率:  ', unseedDefeatSeed[1]], 
+            ['非種子球員平均排名:  ', avgUnseedRank[1]]
         ]
         card3 = [
-            ['Unseed Defeat Seed:  ', unseedDefeatSeed[2]], 
-            ['Average Unseed Rank:  ', avgUnseedRank[2]]
+            ['非種子打敗種子的比率:  ', unseedDefeatSeed[2]], 
+            ['非種子球員平均排名:  ', avgUnseedRank[2]]
         ]
         card4 = [
-            ['Unseed Defeat Seed:  ', unseedDefeatSeed[3]], 
-            ['Average Unseed Rank:  ', avgUnseedRank[3]]
+            ['非種子打敗種子的比率:  ', unseedDefeatSeed[3]], 
+            ['非種子球員平均排名:  ', avgUnseedRank[3]]
         ]
     }
 
