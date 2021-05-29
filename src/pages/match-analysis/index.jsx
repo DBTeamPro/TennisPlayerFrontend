@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/navbar'
 import './index.css'
-import SwitchBox from '../../components/switchbox/match_switchbox'
+import SwitchBox from '../../components/match-switchbox/match_switchbox'
 
 const MatchAnalysis = () => {
     const cata = ['FirstPlace', 'Seed', 'Point', 'Underdog', 'RankDifference']
