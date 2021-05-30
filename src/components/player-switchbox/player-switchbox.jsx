@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import './player_switchbox.css'
-import Big3 from '../player-switchbox/big3'
+import './player-switchbox.css'
+import Big3 from './big3'
+import NumOfMatch from './num-of-match'
 import {motion} from 'framer-motion'
 
 const PlayerSwitchBox = (props) => {
@@ -52,7 +53,7 @@ const PlayerSwitchBox = (props) => {
                     variants={slideVariants}
                     transition={slideTransition}
                 >
-                    <Big3></Big3>
+                    <NumOfMatch></NumOfMatch>
                     <Big3></Big3>
                     <Big3></Big3>
                     <Big3></Big3>
