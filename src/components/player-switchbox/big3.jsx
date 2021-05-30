@@ -1,6 +1,5 @@
 import {React, useState, useEffect} from 'react'
 import './big3.css'
-import GraphBox from '../graphbox/index'
 import axios from 'axios'
 
 const Big3 = () => {
