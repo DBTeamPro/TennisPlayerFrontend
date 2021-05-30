@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './player_switchbox.css'
+import Big3 from '../player-switchbox/big3'
+import {motion} from 'framer-motion'
 
-
-const MatchSwitchBox = (props) => {
+const PlayerSwitchBox = (props) => {
     const [position, setPosition] = useState(0)
     const [isOpen, setOpen] = useState(false)
 
@@ -25,7 +26,7 @@ const MatchSwitchBox = (props) => {
 
 
     return (
-        <div className="switch-box-container">
+        <div className="player-switch-box-container">
             <div className="innerbar-container">
                 <div className="title">
                     <div className="content" onClick={() => setPosition(0)}>{props.t1}</div>
@@ -51,15 +52,15 @@ const MatchSwitchBox = (props) => {
                     variants={slideVariants}
                     transition={slideTransition}
                 >
-                    <FirstPlace></FirstPlace>
-                    <Seed></Seed>
-                    <Point></Point>
-                    <Underdog></Underdog>
-                    <RankDiff></RankDiff>
+                    <Big3></Big3>
+                    <Big3></Big3>
+                    <Big3></Big3>
+                    <Big3></Big3>
+                    <Big3></Big3>
                 </motion.div>
             </div>
         </div>
     )
 }
 
-export default MatchSwitchBox;
+export default PlayerSwitchBox;

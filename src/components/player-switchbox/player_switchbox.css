@@ -1,57 +1,58 @@
-.switch-box-container {
+.player-switch-box-container {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100vh;
-    height: 100vh;
+    height: 80vh;
 }
 
-.switch-box-container .innerbar-container{
+.player-switch-box-container .innerbar-container{
     position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 8%;
     justify-content: left;
-    border-bottom: 3px solid #000;
+    border-bottom: 2px solid #fff;
 }
 
-.switch-box-container .innerbar-container .title{
+.player-switch-box-container .innerbar-container .title{
     position: relative;
     width: 18%;
     height: 100%;
     display: flex;
-    flex-direction: column;
     flex-direction: column-reverse;
 }
 
-.switch-box-container .innerbar-container .title .content{
+.player-switch-box-container .innerbar-container .title .content{
     position: relative;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 18px;
     border-radius: 8px;
     text-align: center;
     cursor: pointer;
+    height: 35%;
 }
 
-.switch-box-container .innerbar-container .title:hover .content{
+.player-switch-box-container .innerbar-container .title:hover .content{
     position: relative;
-    background-color: rgb(233, 227, 227); 
+    background-color: rgb(78, 73, 73); 
 }
 
-.switch-box-container .slide-blocker {
+.player-switch-box-container .slide-blocker {
     position: relative;
     width: 100%;
     height: 92%;
     overflow: hidden;
 }
 
-.switch-box-container .slide-blocker .slide-container {
+.player-switch-box-container .slide-blocker .slide-container {
     position: relative;
     width: 500vh;
     height: 100%;
     display: flex;
     flex-direction: row;
 }
+
