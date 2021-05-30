@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import './player-switchbox.css'
 import Big3 from './big3'
 import NumOfMatch from './num-of-match'
+import MatchTime from './match-time'
+import Hand from './hand'
 import {motion} from 'framer-motion'
 
 const PlayerSwitchBox = (props) => {
@@ -54,8 +56,8 @@ const PlayerSwitchBox = (props) => {
                     transition={slideTransition}
                 >
                     <NumOfMatch></NumOfMatch>
-                    <Big3></Big3>
-                    <Big3></Big3>
+                    <MatchTime></MatchTime>
+                    <Hand></Hand>
                     <Big3></Big3>
                     <Big3></Big3>
                 </motion.div>
