@@ -30,7 +30,7 @@ const MatchSwitchBox = (props) => {
 
 
     return (
-        <div className="switch-box-container">
+        <div className="match-switch-box-container">
             <div className="innerbar-container">
                 <div className="title">
                     <div className="content" onClick={() => setPosition(0)}>{props.t1}</div>
