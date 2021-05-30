@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/navbar'
-import PlayerSwitchBox from '../../components/player-switchbox/player_switchbox'
+import PlayerSwitchBox from '../../components/player-switchbox/player-switchbox'
 import './index.css'
 
 const PlayerAnalysis = () => {
