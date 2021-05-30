@@ -3,18 +3,406 @@
     width: 100vh;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #000;
+    flex-direction: row;
+    flex-direction: row-reverse;
 }
 
-.big3-container .row {
+.big3-container .wallpaper {
     position: relative;
+    width: 90%;
+    height: auto;
+    z-index: -1;
+}
+
+.big3-container .score-container {
+    position: absolute;
+    height: 60%;
+    width: 85%;
+    top: 40%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*row1*/
+.big3-container .score-container .row1 {
+    position: relative;
+    height: 15%;
     width: 100%;
-    height: 50%;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 10%, rgba(255, 255, 255, 0.233) 90%);
     display: flex;
     flex-direction: row;
-    justify-content: center;
+}
+
+.big3-container .score-container .row1 .col1{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.big3-container .score-container .row1 .col2{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(49, 182, 104);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.big3-container .score-container .row1 .col3{
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.big3-container .score-container .row1 .col4{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(49, 182, 104);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.big3-container .score-container .row1 .col5{
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.big3-container .score-container .row1 .col6{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(49, 182, 104);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/*row2*/
+.big3-container .score-container .row2 {
+    position: relative;
+    height: 15%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 10%, rgba(255, 255, 255, 0.233) 90%);
+    display: flex;
+    flex-direction: row;
     margin-top: 0.2em;
-    margin-bottom: 0.5em;
+}
+
+.big3-container .score-container .row2 .col1{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.big3-container .score-container .row2 .col2{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(49, 182, 104);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 2.1em;
+    text-align: center;
+}
+
+.big3-container .score-container .row2 .col3{
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.big3-container .score-container .row2 .col4{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(49, 182, 104);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 2.1em;
+    text-align: center;
+}
+
+.big3-container .score-container .row2 .col5{
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.big3-container .score-container .row2 .col6{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(49, 182, 104);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 2.1em;
+    text-align: center;
+}
+
+/*row3*/
+.big3-container .score-container .row3 {
+    position: relative;
+    height: 16%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 10%, rgba(255, 255, 255, 0.233) 90%);
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.2em;
+}
+
+.big3-container .score-container .row3 .col1{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.big3-container .score-container .row3 .col2{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(239, 250, 93);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.big3-container .score-container .row3 .col3{
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.big3-container .score-container .row3 .col4{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(239, 250, 93);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.big3-container .score-container .row3 .col5{
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.big3-container .score-container .row3 .col6{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(239, 250, 93);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/*row4*/
+.big3-container .score-container .row4 {
+    position: relative;
+    height: 16%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 10%, rgba(255, 255, 255, 0.233) 90%);
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.2em;
+}
+
+.big3-container .score-container .row4 .col1{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.big3-container .score-container .row4 .col2{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(239, 250, 93);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.big3-container .score-container .row4 .col3{
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.big3-container .score-container .row4 .col4{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(239, 250, 93);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.big3-container .score-container .row4 .col5{
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.big3-container .score-container .row4 .col6{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(239, 250, 93);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/*row5*/
+.big3-container .score-container .row5 {
+    position: relative;
+    height: 16%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 10%, rgba(255, 255, 255, 0.233) 90%);
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.2em;
+}
+
+.big3-container .score-container .row5 .col1{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.big3-container .score-container .row5 .col2{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(231, 15, 15);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.big3-container .score-container .row5 .col3{
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.big3-container .score-container .row5 .col4{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(231, 15, 15);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.big3-container .score-container .row5 .col5{
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.big3-container .score-container .row5 .col6{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(231, 15, 15);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/*row6*/
+.big3-container .score-container .row6 {
+    position: relative;
+    height: 16%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 10%, rgba(255, 255, 255, 0.233) 90%);
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.2em;
+}
+
+.big3-container .score-container .row6 .col1{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.big3-container .score-container .row6 .col2{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(231, 15, 15);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.big3-container .score-container .row6 .col3{
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.big3-container .score-container .row6 .col4{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(231, 15, 15);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.big3-container .score-container .row6 .col5{
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.big3-container .score-container .row6 .col6{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border: 0.8px solid rgb(231, 15, 15);
+    background-color: #000;
+    font-weight: 800;
+    font-size: 1.5em;
+    text-align: center;
 }
