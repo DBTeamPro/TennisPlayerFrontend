@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import MatchAnalysis from './pages/match-analysis/index'
 import PlayerAnalysis from './pages/player-analysis/index'
+import SearchService from './pages/search-service/index'
 
 function App() {
 return (
@@ -10,6 +11,7 @@ return (
 			<Switch>
 				<Route exact path="/" component={MatchAnalysis}/>
 				<Route path="/player" component={PlayerAnalysis}/>
+				<Route path="/search" component={SearchService}/>
 			</Switch>
 		</div>
 	</BrowserRouter>
