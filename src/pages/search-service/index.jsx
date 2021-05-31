@@ -40,7 +40,7 @@ const SearchService = () => {
     const [rows, setRows] = useState('')
     const url = 'http://localhost:5000/'
 
-    const getData = async (inputYear, inputMonth) => {
+    const getMatch = async (inputYear, inputMonth) => {
         try {
             const response = await axios.get(`${url}crud/search_match?year=${inputYear}&month=${inputMonth}`)
             setRows(response.data)
@@ -50,16 +50,26 @@ const SearchService = () => {
         }
     }
 
+    const getPlayer = async (inputYear, inputName) => {
+        try {
+            const response = await axios.get(`${url}crud/search_player?year=${inputYear}&name=${inputName}`)
+            setRows(response.data)
+        }
+        catch (error){
+            console.log(`Error: ${error}`)
+        }
+    }
+
     const monthOptions = [
-        { value: '1', label: '1' },
-        { value: '2', label: '2' },
-        { value: '3', label: '3' },
-        { value: '4', label: '4' },
-        { value: '5', label: '5' },
-        { value: '6', label: '6' },
-        { value: '7', label: '7' },
-        { value: '8', label: '8' },
-        { value: '9', label: '9' },
+        { value: '01', label: '01' },
+        { value: '02', label: '02' },
+        { value: '03', label: '03' },
+        { value: '04', label: '04' },
+        { value: '05', label: '05' },
+        { value: '06', label: '06' },
+        { value: '07', label: '07' },
+        { value: '08', label: '08' },
+        { value: '09', label: '09' },
         { value: '10', label: '10' },
         { value: '11', label: '11' },
         { value: '12', label: '12' },
@@ -74,20 +84,34 @@ const SearchService = () => {
     ]
 
     const [monthObj, setMonthObj] = useState(1)
-    const [yearObj, setYearobj] = useState(2011)
+    const [yearObj1, setYearObj1] = useState(2011)
+    const [yearObj2, setYearObj2] = useState(2011)
+    const [name, setName] = useState('')
 
     const chooseMonth = (selectedOption) => {
         setMonthObj(selectedOption)
     }
-    const chooseYear = (selectedOption) => {
-        setYearobj(selectedOption)
+    const chooseYear1 = (selectedOption) => {
+        setYearObj1(selectedOption)
     }
 
-    const handleSubmit = (event) => {
-        getData(yearObj.value, monthObj.value)
+    const chooseYear2 = (selectedOption) => {
+        setYearObj2(selectedOption)
+    }
+
+    const enterName = (inputName) => {
+        setName(inputName.target.value)
+    }
+
+    const handleSubmit1 = (event) => {
+        getMatch(yearObj1.value, monthObj.value)
         event.preventDefault()
     }
 
+    const handleSubmit2 = (event) => {
+        getPlayer(yearObj2.value, name)
+        event.preventDefault()
+    }
 
     const classes = useStyles();
     const [page, setPage] = useState(0);
@@ -108,14 +132,25 @@ const SearchService = () => {
             <Navbar></Navbar>
             <div className="content">
                 <div className="selection-container">
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit1}>
                         <label className="selector">
                             <div className="title">選擇年份:</div>
-                            <Select value={yearObj} options={yearOptions} onChange={chooseYear}></Select>
+                            <Select value={yearObj1} options={yearOptions} onChange={chooseYear1}></Select>
                         </label>
                         <label className="selector">
                             <div className="title">選擇月份:</div>
                             <Select value={monthObj} options={monthOptions} onChange={chooseMonth}></Select>
+                        </label>
+                        <input type="submit" value="查詢"/>
+                    </form>
+                    <form onSubmit={handleSubmit2}>
+                        <label className="selector">
+                            <div className="title">選擇年份:</div>
+                            <Select value={yearObj2} options={yearOptions} onChange={chooseYear2}></Select>
+                        </label>
+                        <label className="selector">
+                            <div className="title">填寫選手名稱:</div>
+                            <input value={name} type="text" onChange={enterName}/>
                         </label>
                         <input type="submit" value="查詢"/>
                     </form>

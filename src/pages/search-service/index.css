@@ -45,3 +45,11 @@
     font-size: 2em;
     margin-top: 1em;
 }
+
+.search-service-container .content .selection-container input[type="text"]{
+    width: 8em;
+    font-size: 2em;
+    border: 1px solid hsl(0, 0%, 70%);
+    border-radius: 10px;
+    font-weight: 100;
+}
