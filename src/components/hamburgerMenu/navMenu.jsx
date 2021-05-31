@@ -84,7 +84,7 @@ const NavMenu = ({ isOpen }) => {
                         },
                     }}
                 >
-                    <Link to="/information">Search Matches</Link>
+                    <Link to="/search">Search Matches</Link>
                 </motion.li>
                 <motion.li
                     className = "NavLink"
