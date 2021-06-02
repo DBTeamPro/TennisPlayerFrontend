@@ -1,0 +1,105 @@
+.small-match-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#fff;
+}
+
+.small-match-container .content {
+    position: relative;
+    width: 100%;
+    height: 93%;
+    display: flex;
+    flex-direction: row;
+}
+
+.small-match-container .content .modify-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.small-match-container .content .modify-container .up {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+.small-match-container .content .modify-container .up .create-container{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding-top: 3em;
+    padding-left: 1em;
+}
+.small-match-container .content .modify-container .up .update-container{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding-top: 3em;
+}
+
+.small-match-container .content .modify-container .delete-container {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    padding-left: 1em;
+}
+
+.small-match-container .content .modify-container .up .create-container .row .title {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 0.8em;
+    width: 50%;
+    height: 100%;
+}
+
+.small-match-container .content .modify-container .up .create-container .row input[type="text"] {
+    width: 70%;
+    font-size: 1em;
+    border: 1px solid hsl(0, 0%, 70%);
+    border-radius: 8px;
+}
+
+.small-match-container .content .modify-container .up .update-container .row .title {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 0.8em;
+    width: 50%;
+    height: 100%;
+}
+
+.small-match-container .content .modify-container .up .update-container .row input[type="text"] {
+    width: 70%;
+    font-size: 1em;
+    border: 1px solid hsl(0, 0%, 70%);
+    border-radius: 8px;
+}
+
+.small-match-container .content .modify-container .delete-container .row input[type="text"] {
+    width: 50%;
+    font-size: 1em;
+    border: 1px solid hsl(0, 0%, 70%);
+    border-radius: 8px;
+}
+
+.small-match-container .content .modify-container .delete-container .row .title {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 0.8em;
+    width: 100%;
+    height: 50%;
+}
+
+
+.small-match-container .content .show-container {
+    position: relative;
+    width: 50%;
+    height: 95%;
+    margin-top: 5%;
+}
