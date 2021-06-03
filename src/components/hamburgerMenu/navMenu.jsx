@@ -101,7 +101,7 @@ const NavMenu = ({ isOpen }) => {
                         },
                     }}
                 >
-                    <Link to="/update">Update Matches</Link>
+                    <Link to="/update">Ranking Analysis</Link>
                 </motion.li>
                 <motion.li
                     className = "NavLink"
